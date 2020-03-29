@@ -18,8 +18,9 @@ Setup Azure Function:
 6. Store your web-hook url in your Azure Key Vault as a secret. Follow the steps in the link above.
 7. [Turn on Managed Service Identity(MSI)][func-msi] on your Azure function.
 8. [Give your Azure Function MSI access][kv-access] to your Azure Key Vault with at least `secret:get` permission.
-9. Configure the organization or username to search for pull requests for.
-10. [Upload this Azure Function][publish-func] to your new Azure Function.
+9. Copy the secret id urls from previous steps, and add them to the Azure Function configuration under `GITHUB_PAT` and `TEAMS_HOOK_URL`. [Read about the Key Vault Secret reference here][app-kv-ref]
+10. Configure the organization or username to search for pull requests for under `GITHUB_ORG`.
+11. [Upload this Azure Function][publish-func] to your new Azure Function.
 
 ## Available configuration
 
@@ -47,6 +48,7 @@ The personal access token to Github needs the following permissions:
 [create-teams-hook]: https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook#add-an-incoming-webhook-to-a-teams-channel
 [func-msi]: https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=dotnet#add-a-system-assigned-identity
 [kv-access]: https://docs.microsoft.com/en-us/azure/key-vault/managed-identity
-[publish-func]: https://docs.microsoft.com/en-us/azure/key-vault/managed-identity
+[publish-func]: https://docs.microsoft.com/en-us/azure/key-vault/managed-
+[app-kv-ref]: https://docs.microsoft.com/en-us/azure/app-service/app-service-key-vault-references#reference-syntax
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/heine
