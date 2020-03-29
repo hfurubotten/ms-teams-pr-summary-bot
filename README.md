@@ -23,11 +23,11 @@ Setup Azure Function:
 
 ## Available configuration
 
-| Configuration Name | Required | Description                                                             |
-| ------------------ | -------- | ----------------------------------------------------------------------- |
-| `GITHUB_PAT`       | yes      | Github Personal Access Token                                            |
-| `GITHUB_ORG`       | yes      | Username or organization "login" name to search for pull requests under |
-| `TEAMS_HOOK_URL`   | yes      | Incoming Web-hook url to MS Teams                                       |
+| Configuration Name | Required | Description                                                                 |
+| ------------------ | -------- | --------------------------------------------------------------------------- |
+| `GITHUB_PAT`       | yes      | Github Personal Access Token. **Recommended to store in a Key Vault!**      |
+| `GITHUB_ORG`       | yes      | Username or organization "login" name to search for pull requests under     |
+| `TEAMS_HOOK_URL`   | yes      | Incoming Web-hook url to MS Teams. **Recommended to store in a Key Vault!** |
 
 ## Github Scopes
 
