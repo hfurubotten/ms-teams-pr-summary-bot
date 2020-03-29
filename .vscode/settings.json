@@ -1,0 +1,9 @@
+{
+    "python.formatting.provider": "black",
+    "python.pythonPath": ".venv\\Scripts\\python.exe",
+    "azureFunctions.deploySubpath": "__app__",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~2",
+    "debug.internalConsoleOptions": "neverOpen"
+}
