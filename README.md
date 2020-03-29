@@ -2,6 +2,8 @@
 
 Highly experimental and hacky way of sending a summary list of pull requests, that's ready for review, to a MS Teams channel at a given time.
 
+[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
+
 ## Setup
 
 First of all you need a Azure Function to run this "bot" in, and then configure it with a PAT (Personal Access Token) and a web hook url to MS Teams.
@@ -23,9 +25,9 @@ Setup Azure Function:
 
 | Configuration Name | Required | Description                                                             |
 | ------------------ | -------- | ----------------------------------------------------------------------- |
-| GITHUB_PAT         | yes      | Github Personal Access Token                                            |
-| GITHUB_ORG         | yes      | Username or organization "login" name to search for pull requests under |
-| TEAMS_HOOK_URL     | yes      | Incoming Web-hook url to MS Teams                                       |
+| `GITHUB_PAT`       | yes      | Github Personal Access Token                                            |
+| `GITHUB_ORG`       | yes      | Username or organization "login" name to search for pull requests under |
+| `TEAMS_HOOK_URL`   | yes      | Incoming Web-hook url to MS Teams                                       |
 
 ## Github Scopes
 
@@ -46,3 +48,5 @@ The personal access token to Github needs the following permissions:
 [func-msi]: https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=dotnet#add-a-system-assigned-identity
 [kv-access]: https://docs.microsoft.com/en-us/azure/key-vault/managed-identity
 [publish-func]: https://docs.microsoft.com/en-us/azure/key-vault/managed-identity
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
+[buymeacoffee]: https://www.buymeacoffee.com/heine
