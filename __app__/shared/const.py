@@ -16,6 +16,7 @@ query($queryString: String!){
         repository {
           nameWithOwner
         }
+        publishedAt
       }
     }
   }
@@ -23,7 +24,5 @@ query($queryString: String!){
 """
 SEARCH_QUERY_FORMAT = "is:open is:pr archived:false user:{}"
 
-TEAMS_PRS_MESSAGE_FORMAT = (
-    """**\\[{}\\] [{}]({})**\r\n\r\n\\#{} created by @{}\r\n\r\n--------- \r\n\r\n"""
-)
+TEAMS_PRS_MESSAGE_FORMAT = """**\\[{}\\] [{}]({})**\r\n\r\n\\#{} created by @{} {} ago\r\n\r\n--------- \r\n\r\n"""
 TEAMS_MESSAGE_TITLE_FORMAT = "Pull request reviews in {}"

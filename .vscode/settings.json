@@ -1,5 +1,7 @@
 {
     "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
     "python.pythonPath": ".venv\\Scripts\\python.exe",
     "azureFunctions.deploySubpath": "__app__",
     "azureFunctions.scmDoBuildDuringDeployment": true,
